@@ -25,8 +25,10 @@ def functionalblock():
         print("tieto čísla sú nesúdelitelné")
     if oldtest == -1:
         print("tieto čísla sú nesúdelitelné")
-    else:
-        print(f"{oldtest}")
+    if oldtest != 1:
+        print(oldtest)
+    if oldtest != -1:
+        print(oldtest)
 functionalblock()
 while trueend == False:
     ask = str(input("chceš pokračovať? [y/n]... "))
