@@ -1,8 +1,8 @@
 trueend= False
 def functionalblock():
     endblock = False
-    a = int(input("zadaj prvé číslo... "))
-    b = int(input("zadaj druhé číslo... "))
+    a = int(input("input first (1st) numner\n"))
+    b = int(input("\ninput second (2nd) number\n "))
     startA = a
     startB = b
     oldtest = int(-1)
@@ -37,12 +37,12 @@ def functionalblock():
             a = test
     if oldtest == 1 or oldtest == -1:
         
-        print(f"\nčísla {startA} a {startB} sú nesúdelitelné")
+        print(f"\nnumbers {startA} and {startB} don't have a common divider")
     else:
-        print(f"\nNajväčší Spoločný Delitel čísel {startA} a {startB} je číslo {oldtest}")
+        print(f"\nLargest common divider of the numbers {startA} and {startB} is the number {oldtest}")
 functionalblock()
 while trueend == False:
-    ask = str(input("\n\nchceš pokračovať? [y/n]... "))
+    ask = str(input("\n\ncontinue? [y/n]\n"))
     ask.lower()
     if ask == "y":
         functionalblock()
